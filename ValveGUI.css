@@ -1,0 +1,475 @@
+@-moz-document url-prefix("https://chatgpt.com/") {
+    .dark {
+  --bg-primary:#4c5844; /*#4c5844*/
+  --bg-primary-inverted:#fff;
+  --bg-secondary:#3e4637;
+  --bg-tertiary:#3e4637;
+  --bg-scrim:#0d0d0d80;
+  --bg-elevated-primary:#3e4637;
+  --bg-elevated-secondary:#4c5844;
+  --bg-status-warning:#4a2206;
+  --bg-status-error:#4d100e;
+  --border-default:#ffffff26;
+  --border-heavy:#fff3;
+  --border-light:#ffffff0d;
+  --border-status-warning:#4a2206;
+  --border-status-error:#4d100e;
+  --text-primary:#fff;
+  --text-secondary:#f3f3f3;
+  --text-tertiary:#afafaf;
+  --text-inverted:#0d0d0d;
+  --text-inverted-static:#fff;
+  --text-accent:#66b5ff;
+  --text-status-warning:#ff9e6c;
+  --text-status-error:#ff8583;
+  --icon-primary:#e8e8e8;
+  --icon-secondary:#cdcdcd;
+  --icon-tertiary:#afafaf;
+  --icon-inverted:#0d0d0d;
+  --icon-inverted-static:#fff;
+  --icon-accent:#66b5ff;
+  --icon-status-warning:#ff9e6c;
+  --icon-status-error:#ff8583;
+  --interactive-bg-primary-default:#fff;
+  --interactive-bg-primary-hover:#fffc;
+  --interactive-bg-primary-press:#ffffffe5;
+  --interactive-bg-primary-inactive:#fff;
+  --interactive-bg-primary-selected:#fff;
+  --interactive-bg-secondary-default:#fff0;
+  --interactive-bg-secondary-hover:#ffffff1a;
+  --interactive-bg-secondary-press:#ffffff0d;
+  --interactive-bg-secondary-inactive:#fff0;
+  --interactive-bg-secondary-selected:#ffffff1a;
+  --interactive-bg-tertiary-default:#212121;
+  --interactive-bg-tertiary-hover:#181818;
+  --interactive-bg-tertiary-press:#0d0d0d;
+  --interactive-bg-tertiary-inactive:#212121;
+  --interactive-bg-tertiary-selected:#212121;
+  --interactive-bg-accent-default:#013566;
+  --interactive-bg-accent-hover:#003f7a;
+  --interactive-bg-accent-muted-hover:#394a5b;
+  --interactive-bg-accent-muted-context:#394a5b80;
+  --interactive-bg-accent-press:#004f99;
+  --interactive-bg-accent-muted-press:#40484f;
+  --interactive-bg-accent-inactive:#013566;
+  --interactive-bg-danger-primary-default:#e02e2a;
+  --interactive-bg-danger-primary-hover:#fa423e;
+  --interactive-bg-danger-primary-press:#ba2623;
+  --interactive-bg-danger-primary-inactive:#e02e2a;
+  --interactive-bg-danger-secondary-default:#fff0;
+  --interactive-bg-danger-secondary-hover:#fff0;
+  --interactive-bg-danger-secondary-press:#fff0;
+  --interactive-bg-danger-secondary-inactive:#fff0;
+  --interactive-border-focus:#fff;
+  --interactive-border-secondary-default:#ffffff26;
+  --interactive-border-secondary-hover:#ffffff26;
+  --interactive-border-secondary-press:#fff3;
+  --interactive-border-secondary-inactive:#ffffff1a;
+  --interactive-border-tertiary-default:#ffffff1a;
+  --interactive-border-tertiary-hover:#ffffff26;
+  --interactive-border-tertiary-press:#ffffff1a;
+  --interactive-border-tertiary-inactive:#ffffff1a;
+  --interactive-border-danger-secondary-default:#fa423e;
+  --interactive-border-danger-secondary-hover:#ff6764;
+  --interactive-border-danger-secondary-press:#e02e2a;
+  --interactive-border-danger-secondary-inactive:#fa423e;
+  --interactive-label-primary-default:#0d0d0d;
+  --interactive-label-primary-hover:#0d0d0d;
+  --interactive-label-primary-press:#0d0d0d;
+  --interactive-label-primary-inactive:#0d0d0d;
+  --interactive-label-primary-selected:#0d0d0d;
+  --interactive-label-secondary-default:#f3f3f3;
+  --interactive-label-secondary-hover:#ffffffe5;
+  --interactive-label-secondary-press:#fffc;
+  --interactive-label-secondary-inactive:#f3f3f3;
+  --interactive-label-secondary-selected:#f3f3f3;
+  --interactive-label-tertiary-default:#cdcdcd;
+  --interactive-label-tertiary-hover:#cdcdcd;
+  --interactive-label-tertiary-press:#cdcdcd;
+  --interactive-label-tertiary-inactive:#cdcdcd;
+  --interactive-label-tertiary-selected:#cdcdcd;
+  --interactive-label-accent-default:#99ceff;
+  --interactive-label-accent-hover:#99ceff;
+  --interactive-label-accent-press:#99ceff;
+  --interactive-label-accent-inactive:#99ceff;
+  --interactive-label-accent-selected:#99ceff;
+  --interactive-label-danger-primary-default:#fff;
+  --interactive-label-danger-primary-hover:#fff;
+  --interactive-label-danger-primary-press:#fff;
+  --interactive-label-danger-primary-inactive:#fff;
+  --interactive-label-danger-secondary-default:#fa423e;
+  --interactive-label-danger-secondary-hover:#ff6764;
+  --interactive-label-danger-secondary-press:#e02e2a;
+  --interactive-label-danger-secondary-inactive:#fa423e;
+  --interactive-icon-primary-default:#0d0d0d;
+  --interactive-icon-primary-hover:#0d0d0d;
+  --interactive-icon-primary-press:#0d0d0d;
+  --interactive-icon-primary-selected:#0d0d0d;
+  --interactive-icon-primary-inactive:#0d0d0d;
+  --interactive-icon-secondary-default:#f3f3f3;
+  --interactive-icon-secondary-hover:#ffffffe5;
+  --interactive-icon-secondary-press:#fffc;
+  --interactive-icon-secondary-selected:#f3f3f3;
+  --interactive-icon-secondary-inactive:#f3f3f3;
+  --interactive-icon-tertiary-default:#cdcdcd;
+  --interactive-icon-tertiary-hover:#cdcdcd;
+  --interactive-icon-tertiary-press:#cdcdcd;
+  --interactive-icon-tertiary-selected:#cdcdcd;
+  --interactive-icon-tertiary-inactive:#cdcdcd;
+  --interactive-icon-accent-default:#99ceff;
+  --interactive-icon-accent-hover:#99ceff;
+  --interactive-icon-accent-press:#99ceff;
+  --interactive-icon-accent-selected:#99ceff;
+  --interactive-icon-accent-inactive:#99ceff;
+  --interactive-icon-danger-primary-default:#fff;
+  --interactive-icon-danger-primary-hover:#fff;
+  --interactive-icon-danger-primary-press:#fff;
+  --interactive-icon-danger-primary-inactive:#fff;
+  --interactive-icon-danger-secondary-default:#fa423e;
+  --interactive-icon-danger-secondary-hover:#ff6764;
+  --interactive-icon-danger-secondary-press:#e02e2a;
+  --interactive-icon-danger-secondary-inactive:#fa423e;
+  --utility-scrollbar:#fff3
+}
+
+    html, body {
+    border-radius: 0px !important;
+    }
+    
+    /* svgs.  */
+    svg.icon-lg{
+    /* visibility: hidden !important; */
+    }
+    
+    /* TODO: gotta find a way out how to sneak my bigass steam logo on the website */
+    .icon-lg::before{
+    /* content:url("https://upload.wikimedia.org/wikipedia/commons/2/24/Steam_Logo.svg");
+    height: var(--icon-lg-size,1.5rem);
+    width: var(--icon-lg-size,1.5rem); */
+    }
+    
+    /* the rest of the stuff */
+    * {
+    font-family: "Trebuchet MS", sans-serif !important;
+    -webkit-font-smoothing: none !important;
+    border-radius: 0px;
+    }
+    
+    ::selection {
+    background:#958831;
+    }
+    
+    #stage-slideover-sidebar{
+    border-width: 1px;
+    border-right-color:#889180;
+    border-bottom-color:#889180;
+    border-top-color:#282e22;
+    border-left-color:#282e22; 
+    }
+    
+    #page-header{
+    border-width: 1px;
+    border-right-color:#889180;
+    border-bottom-color:#889180;
+    border-top-color:#282e22;
+    border-left-color:#282e22;
+    }
+    
+    .shadow-long:is(.dark *){
+    --tw-shadow: none;
+    }
+    
+    .rounded-lg{
+    background-color:#3e4637
+    border-radius: 0px;
+    border-right-color:#889180;
+    border-bottom-color:#889180;
+    border-top-color:#282e22;
+    border-left-color:#282e22;
+    }
+    
+    .bg-token-main-surface-secondary-selected {
+    background-color:#958831;
+    }
+    
+    .bg-token-bg-primary {
+    border-radius: 0px !important;
+    border-width: 2px;
+    border-right-color:#889180;
+    border-bottom-color:#889180;
+    border-top-color:#282e22;
+    border-left-color:#282e22;
+    }
+    
+    .composer-secondary-button-color{
+    background-color:#3e4637;
+    }
+    
+    .composer-submit-btn{
+    background-color:#4c5844;
+    color: #ffffff;
+    border-radius: 0px;
+    border-width: 2px;
+    border-right-color:#282e22;
+    border-bottom-color:#282e22;
+    border-top-color:#889180;
+    border-left-color:#889180;
+    }
+    
+    .hover\:opacity-80:hover{
+    background-color:#fffffa1a;
+    opacity: 100%;
+    border-radius: 0px;
+    }
+    
+    .composer-btn{
+    background-color:#4c5844;
+    border-radius: 0px;
+    border-width: 2px;
+    border-right-color:#282e22;
+    border-bottom-color:#282e22;
+    border-top-color:#889180;
+    border-left-color:#889180;
+    }
+    
+    .composer-btn:active{
+    background-color:#4c5844;
+    border-radius: 0px;
+    border-width: 2px;
+    border-right-color:#889180;
+    border-bottom-color:#889180;
+    border-top-color:#282e22;
+    border-left-color:#282e22;
+    }
+    
+    .composer-secondary-button-color{
+    background-color:#4c5844;
+    border-radius: 0px;
+    border-width: 2px;
+    border-right-color:#282e22;
+    border-bottom-color:#282e22;
+    border-top-color:#889180;
+    border-left-color:#889180;   
+    }
+    
+    .composer-secondary-button-color:active{
+    background-color:#4c5844;
+    border-radius: 0px;
+    border-width: 2px;
+    border-right-color:#889180;
+    border-bottom-color:#889180;
+    border-top-color:#282e22;
+    border-left-color:#282e22;
+    }
+    
+    .hover\:opacity-80:hover {
+    background-color: #4c5844;
+    opacity: 100%;
+    border-radius: 0px;
+    }
+    
+    .user-message-bubble-color {
+    background-color:#3e4637;
+    border-width: 2px;
+    border-radius: 0px;
+    border-right-color:#889180;
+    border-bottom-color:#889180;
+    border-top-color:#282e22;
+    border-left-color:#282e22;
+    color:var(--theme-user-msg-text)
+    }
+    
+    .bg-token-main-surface-tertiary.rounded-3xl.px-3.py-3{
+    background-color:#3e4637;
+    border-width: 2px;
+    border-radius: 0px;
+    border-right-color:#889180;
+    border-bottom-color:#889180;
+    border-top-color:#282e22;
+    border-left-color:#282e22;
+    }
+    
+    .dark\:bg-token-main-surface-tertiary:is(.dark *){
+    background-color:#3e4637;
+    border-radius: 0px;
+    }
+    
+      .__menu-item:not(:disabled):not([data-disabled]):not([data-no-hover-bg]):active:not(:has([data-trailing-button]:hover)), .__menu-item:not(:disabled):not([data-disabled]):not([data-no-hover-bg])[data-active] {
+    border-radius: 0px;
+    }
+    
+    .__menu-item:not(:disabled):not([data-disabled]):not([data-no-hover-bg]):focus:not(:has([data-trailing-button]:hover)), .__menu-item:not(:disabled):not([data-disabled]):not([data-no-hover-bg])[data-active] {
+    border-radius: 0px;
+    }
+    
+    .__composer-pill{
+    color:#958831;
+    }
+    
+    .__composer-pill.group{
+    color:#958831;
+    }
+    
+    button.__composer-pill:has(.__composer-pill-remove):hover{
+    color:#958831;
+    }
+    
+    .shadow-long.flex.overflow-hidden.rounded-xl{
+    border-width: 2px;
+    border-radius: 0px;
+    border-right-color:#282e22;
+    border-bottom-color:#282e22;
+    border-top-color:#889180;
+    border-left-color:#889180;
+    background-color:#4c5844;
+    }
+    
+    .markdown-new-styling :is(.markdown hr){
+    border-color:#3e4637;
+    }
+    
+    .contain-inline-size {
+    border-width: 2px;
+    border-radius: 0px;
+    border-right-color:#889180;
+    border-bottom-color:#889180;
+    border-top-color:#282e22;
+    border-left-color:#282e22;
+    }
+    
+    .rounded-sm{
+    border-radius: 0px;
+    border-width: 2px;
+    border-right-color:#282e22;
+    border-bottom-color:#282e22;
+    border-top-color:#889180;
+    border-left-color:#889180;
+    }
+    
+    .bg-token-sidebar-surface-primary {
+    background-color: #3e4637;
+    }
+    
+    .dark\:bg-\[\#303030\]:is(.dark *) {
+    background-color:#3e4637;
+    }
+    
+    .bg-token-main-surface-primary {
+    background-color:#4c5844;
+    border-radius: 0px;
+    border-width: 2px;
+    border-right-color:#282e22;
+    border-bottom-color:#282e22;
+    border-top-color:#889180;
+    border-left-color:#889180;
+    }
+    
+    .btn-primary{
+    color:#ffffff;
+    border-width: 2px;
+    border-radius: 0px;
+    border-right-color:#282e22;
+    border-bottom-color:#282e22;
+    border-top-color:#889180;
+    border-left-color:#889180;
+    background-color:#4c5844;
+    }
+    
+    .btn-secondary {
+    border-width: 2px;
+    border-radius: 0px;
+    border-right-color:#282e22;
+    border-bottom-color:#282e22;
+    border-top-color:#889180;
+    border-left-color:#889180;
+    background-color:#4c5844;
+    }
+    
+    .ltr\:-translate-x-1\/2:where(:dir(ltr),[dir=ltr],[dir=ltr] *) {
+    /* i don't remember what it was */
+    }
+    
+    .dark\:text-\[\#DCDBF6\]:is(.dark *) {
+    display: none;
+  }
+    
+    .dark\:prose-invert:is(.dark *) :where(code):not(:where([class~=not-prose],
+  [class~=not-prose] *)) {
+    background-color:#3e4637;
+  }
+    
+    .prose :where(code):not(:where([class~=not-prose],
+  [class~=not-prose] *)) {
+    border-radius: 0px;
+  }
+    
+ /*upgrade page*/
+    @layer utilities {
+  @media (min-width: 48rem) {
+    .md\:rounded-2xl\! {
+      border-radius: 0px !important;
+    }
+  }
+}
+    .relative.flex.flex-col.bg-token-main-surface-primary.mt-0{
+    padding: 25px;
+    }
+    
+    .relative.flex.flex-col.text-xs.text-token-text-secondary.bg-token-main-surface-primary.pt-3{
+    padding: 5px;
+    }
+    
+    .bg-token-main-surface-tertiary{
+    background-color:#4c5844;
+    }
+    
+    .bg-token-bg-primary.absolute.inset-0.-z-10.box-content.h-full.rounded-full.shadow-sm{
+    border-right-color:#282e22;
+    border-bottom-color:#282e22;
+    border-top-color:#889180;
+    border-left-color:#889180;
+    border-width: 0px;
+    }
+    
+    .relative.z-10.h-full.px-3.text-center.font-medium.text-sm{
+    border-right-color:#282e22;
+    border-bottom-color:#282e22;
+    border-top-color:#889180;
+    border-left-color:#889180;
+    border-width: 2px;
+    }
+    
+    .text-token-text-primary.border.border-transparent.inline-flex.h-9.items-center.justify-center.gap-1.rounded-lg.bg-white.px-3.text-sm.dark\:transparent.dark\:bg-transparent.leading-none.outline-hidden.cursor-pointer.hover\:bg-token-main-surface-secondary.dark\:hover\:bg-token-main-surface-secondary.keyboard-focused\:bg-token-main-surface-secondary.radix-state-active\:text-token-text-secondary.radix-disabled\:cursor-auto.radix-disabled\:bg-transparent.radix-disabled\:text-token-text-tertiary.dark\:radix-disabled\:bg-transparent.data-no-hover-bg\:hover\:bg-transparent.dark\:data-no-hover-bg\:hover\:bg-transparent {
+    background-color: #4c5844;
+    border-radius: 0px;
+    border-width: 2px;
+    border-right-color: #282e22;
+    border-bottom-color: #282e22;
+    border-top-color: #889180;
+    border-left-color: #889180;
+    }
+
+    
+    /*misc*/
+    .border-token-border-default{
+    background-color:#3e4637;
+    }
+    
+    /*search*/
+    .my-2.grow.overflow-y-auto{
+    background-color:#4c5844;
+    border-top-color:#282e22;
+    border-width: 0px;
+    border-top-width: 2px;
+    margin: 0px;
+    }
+    
+    .dark\:bg-token-main-surface-secondary:is(.dark *){
+    background-color:#55604d;
+    }
+    
+    /* loading bars */
+    .bg-token-text-primary{
+    background-color:#958831;
+    }
+}
