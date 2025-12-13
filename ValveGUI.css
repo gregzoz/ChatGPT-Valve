@@ -188,6 +188,15 @@
     border-left-color:#282e22;
     }
     
+    .btn.relative.btn-ghost.text-token-text-primary{
+    background-color:#3e4637
+    border-radius: 0px;
+    border-right-color:#282e22;
+    border-bottom-color:#282e22;
+    border-top-color:#889180;
+    border-left-color:#889180;
+    }
+    
     .bg-token-main-surface-secondary-selected {
     background-color:#958831;
     }
