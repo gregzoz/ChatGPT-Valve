@@ -242,6 +242,26 @@
     border-left-color:#282e22;
     }
     
+    .composer-submit-button-color.text-submit-btn-text{
+    background-color:#4c5844;
+    border-radius: 0px;
+    border-width: 2px;
+    border-right-color:#282e22;
+    border-bottom-color:#282e22;
+    border-top-color:#889180;
+    border-left-color:#889180;
+    }
+    
+    composer-submit-button-color:active{
+    background-color:#4c5844;
+    border-radius: 0px;
+    border-width: 2px;
+    border-right-color:#889180;
+    border-bottom-color:#889180;
+    border-top-color:#282e22;
+    border-left-color:#282e22;
+    }
+    
     .composer-secondary-button-color{
     background-color:#4c5844;
     border-radius: 0px;
