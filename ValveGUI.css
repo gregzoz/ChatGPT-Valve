@@ -135,6 +135,10 @@
     html, body {
     border-radius: 0px !important;
     }
+
+    .\@w-sm\/main\:\[scrollbar-gutter\:stable_both-edges\] {
+      scrollbar-gutter: auto;
+    }
     
     /* svgs.  */
     svg.icon-lg{
@@ -188,7 +192,6 @@
     }
     
     .btn.relative.btn-ghost.text-token-text-primary{
-    background-color:#3e4637;
     border-radius: 0px;
     border-right-color:#282e22;
     border-bottom-color:#282e22;
