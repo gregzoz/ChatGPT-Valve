@@ -1,1 +1,1 @@
-# Valve GUI | CSS theme for ChatGPT
+# Valve GUI for ChatGPT
